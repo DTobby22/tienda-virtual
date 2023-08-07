@@ -2,4 +2,4 @@
 
 __pycache__
 env
-database.sqlite
+db.sqlite3
