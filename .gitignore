@@ -1,0 +1,5 @@
+# Archivos ignorados
+
+__pycache__
+env
+database.sqlite
