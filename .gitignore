@@ -1,5 +1,24 @@
 # Archivos ignorados
 
 __pycache__
-env
+/env
 db.sqlite3
+staticfiles/
+*/migrations/
+*.cache
+*.pyc
+*.pyo
+*.db
+*.log
+*.swp
+*.swo
+*.tmp
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.class
+*.jar
+*.log
+.DS_Store
+Thumbs.db
