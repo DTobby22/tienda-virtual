@@ -12,22 +12,22 @@ class Categoria(models.Model):
         verbose_name = 'Categoria'
         verbose_name_plural = 'Categorias'
 
-    def __def__(self):
-        return self.name
+    def __str__(self):
+        return self.nombre
 
 
 class Post(models.Model):
-    Titulo = models.CharField(max_length=50)
+    titulo = models.CharField(max_length=50)
     contenido = models.CharField(max_length=100)
     imagen = models.ImageField(upload_to="blog", null=True, blank=True)
     autor = models.ForeignKey(User, on_delete=models.CASCADE)
     Categoria = models.ManyToManyField(Categoria)
     created = models.DateTimeField(auto_now_add=True)
-    update = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now_add=True)
 
     class Meta: 
         verbose_name = 'post'
-        verbose_name_plural = 'Posts'
+        verbose_name_plural = 'posts'
 
-    def __def__(self):
-        return self.name
+    def __str__(self):
+        return self.titulo
