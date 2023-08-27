@@ -12,7 +12,7 @@ class Categoria(models.Model):
         verbose_name = 'categoria'
         verbose_name_plural = 'categorias'
 
-    def __def__(self):
+    def __str__(self):
         return self.nombre
 
 
@@ -29,5 +29,5 @@ class Post(models.Model):
         verbose_name = 'post'
         verbose_name_plural = 'posts'
 
-    def __def__(self):
+    def __str__(self):
         return self.titulo
