@@ -41,13 +41,9 @@
                             </div>
                             <div class="col-9">
                                 <h6 class="m-1">{{post.autor}}</h6>
-
                                 {% for categoria in post.categoria.all %}
-                                <a href="{% url 'categoria' categoria.id %}">
-                                    <p class="m-1">{{categoria.nombre}}</p> 
-                                </a>
+                                <p class="m-1">{{categoria.nombre}}</p>
                                 {% endfor %}
-
                             </div>
                         </div>
                     </div>
