@@ -1,0 +1,25 @@
+{% extends "TiendaVirtualApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div>
+
+    {% if "valido" in request.GET %}
+
+        <p style="color: aliceblue;">Informacion enviada correctamente!!</p>
+    
+    {% endif %}
+
+    <form action="" method="post" style="text-align: center;">
+        {% csrf_token %}
+        <table style="color: aliceblue;">
+            {{miFormulario.as_table}}
+        </table>
+        <input type="submit" value="Enviar" style="width: 150px;">
+    </form>
+    
+</div>
+
+{% endblock %}
